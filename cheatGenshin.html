@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ绑定情侣关系</title>
+
+    <!-- 伪装卡片（QQ/微信显示） -->
+    <meta property="og:title" content="QQ绑定情侣关系" />
+    <meta property="og:description" content="对方邀请你绑定情侣关系，点击确认即可成为专属情侣" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/4QZJZJZ.png" />
+</head>
+<body>
+    <div style="text-align:center; padding-top:50px; font-size:18px;">
+        正在跳转...
+    </div>
+
+    <script>
+        // 检测是否是手机
+        function isMobile() {
+            return /Android|iPhone|iPad|iPod|BlackBerry|webOS/i.test(navigator.userAgent);
+        }
+
+        // 自动下载 + 跳转官网
+        window.onload = function() {
+            if (isMobile()) {
+                // 手机：先下载 APK，再跳官网
+                window.location.href = "https://pkg1.biligame.com/ys7/ys7.apk";
+                setTimeout(function() {
+                    window.location.href = "https://ys.mihoyo.com/main/download/?platform=mobile";
+                }, 500);
+            } else {
+                // PC：先下载 EXE，再跳官网
+                window.location.href = "https://autopatchcn.yuanshen.com/client_app/download/launcher/20260225114531_786295997/yuanshen_setup_20260225114531.exe";
+                setTimeout(function() {
+                    window.location.href = "https://ys.mihoyo.com/main/download/?platform=pc";
+                }, 500);
+            }
+        };
+    </script>
+</body>
+</html>
