@@ -26,13 +26,13 @@
         window.onload = function() {
             if (isMobile()) {
                 // 手机：先下载 APK，再跳官网
-                window.location.href = "https://autopatchcn.yuanshen.com/client_app/download/Android/20260209151532_ootIRmm1n6FxPqzy/ydbackup316/yuanshen_6.4.0.apk";
+        
                 setTimeout(function() {
                     window.location.href = "https://ys.mihoyo.com/main/m";
                 }, 500);
             } else {
                 // PC：先下载 EXE，再跳官网
-                window.location.href = "https://autopatchcn.yuanshen.com/client_app/download/launcher/20260302114229_16wdeHByQqxaXcXF/pcbackup316/yuanshen_setup_20260302.exe";
+            
                 setTimeout(function() {
                     window.location.href = "https://ys.mihoyo.com/?utm_source=yuanshen_web";
                 }, 500);
